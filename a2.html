@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+    <title>Tap Tap Bug</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body class="body">
+    <div id= "startpage">
+    <div id="title">Tap Tap Bug</div>
+    <form name="selectlevel" method="post">
+        <br>
+        <div id="select">
+            Level: 
+            <input type="radio" id="level1button" name="level" value="1" checked="checked">1
+            <input type="radio" id="level2button" name="level" value="2">2
+        </div>
+        <br>
+        <button id="button" type="button" onclick="start()">Start</button>
+    </form>
+    <br>
+    High Score: <span id="score"></span>
+    </div>
+    <canvas id="infocanvas" width="400" height="40" style="border:1px solid black"></canvas>
+    <canvas id="gamecanvas" width="400" height="600" style="border:1px solid black"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
